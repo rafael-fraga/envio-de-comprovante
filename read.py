@@ -1,10 +1,13 @@
 from pymongo import MongoClient
 import pandas as pd
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 
 # mongoDB
 
-client = MongoClient('') #                                             <--- token de autênticação omitido
+client = MongoClient(os.getenv("TOKEN")) # Use .env para configurar seu token
 db = client['registro-de-entrada']
 notas = db['comprovantes']
 

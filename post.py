@@ -1,6 +1,9 @@
 from tkinter import *
 from pymongo import MongoClient
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 
 # post
 
@@ -23,7 +26,7 @@ def post():
 
 # mongoDB
 
-client = MongoClient('') #                                             <--- token de autênticação omitido
+client = MongoClient(os.getenv("TOKEN")) # Use .env para configurar seu token
 db = client['registro-de-entrada']
 notas = db['comprovantes']
 
