@@ -5,4 +5,4 @@ Devido ao grande fluxo de entradas financeiras do final de ano, criei esta simpl
 O operador deve preencher os campos 'Origem', 'Valor', e 'Data (de entrada)', clicar em enviar comprovante e aguardar o aparecimento da mensagem confirmando o envio no canto inferior da interface.
 
 # pacotes
-Esta aplicação requer apenas dois módulos: (1) tkinter: possibilita a criação de uma interface gráfica; (2) pymongo: realiza as devidas conecções com o bando de dados MongoDB; (3) pandas: útil para organizar os dados após a requisição dos dados do database.
+Esta aplicação requer apenas dois módulos: (1) tkinter: possibilita a criação de uma interface gráfica; (2) pymongo: realiza as devidas conecções com o bando de dados MongoDB; (3) pandas: útil para organizar os dados após a requisição do database.
