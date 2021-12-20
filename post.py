@@ -23,7 +23,7 @@ def post():
 
 # mongoDB
 
-client = MongoClient('')
+client = MongoClient('') #                                             <--- token de autênticação omitido
 db = client['registro-de-entrada']
 notas = db['comprovantes']
 
