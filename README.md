@@ -1,2 +1,11 @@
-# envio-de-comprovante
-Devido ao grande fluxo de entradas financeiras do final de ano, criei esta simples aplicação a fim de auxiliar a equipe da operação na tarefa de enviar os dados dos comprovantes bancários para o financeiro. O sistema consiste de uma simples interface Tkinter de inputs (post.py) que emite dados para um banco MongoDB permitindo a requisição desses dados à partir de outro computador.
+# introdução
+Devido ao grande fluxo de entradas financeiras do final de ano, criei esta simples aplicação a fim de auxiliar a equipe da operação na tarefa de enviar os dados dos comprovantes bancários para o financeiro. O sistema consiste de uma simples interface Tkinter de inputs (post.py) que emite dados para um banco MongoDB permitindo a requisição desses dados à partir de outro computador. O arquivo read.py é apenas um simples exemplo de requisição do database.
+
+# utilização (post.py)
+O operador deve preencher os campos 'Origem', 'Valor', e 'Data (de entrada)', clicar em enviar comprovante e aguardar o aparecimento da mensagem confirmando o envio no canto inferior da interface.
+
+# pacotes
+Esta aplicação requer apenas dois módulos: 
+tkinter - possibilita a criação de uma interface gráfica
+pymongo - realiza as devidas conecções com o bando de dados MongoDB
+pandas* - útil para organizar os dados após a requisição dos dados do database
